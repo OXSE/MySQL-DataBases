@@ -19,7 +19,7 @@ lastname VARCHAR(30) NOT NULL,
 )";
 
 if ($conexion->query($sql) === TRUE) {
-    echo "La tabla mexico a sido creada exitosamente";
+    echo "La tabla donadores a sido creada exitosamente";
 } else {
     echo "Error al crear la tabla: " . $conexion->error;
 }
