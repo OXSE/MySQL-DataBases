@@ -5,9 +5,9 @@ if (!$enlace) {
 }
 
 // Crear base de datos
-$sql = "CREATE DATABASE donadores";
+$sql = "CREATE DATABASE despensa";
 if ($enlace->query($sql) == TRUE) {
-    echo "¡Base de datos creada exitosamente!";
+    echo "¡Base de datos despensa creada exitosamente!";
 } else {
     echo "Error al crear base de datos: " . $enlace->error;
 }
