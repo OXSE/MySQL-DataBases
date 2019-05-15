@@ -4,7 +4,7 @@
 	$usuario = "root";
 	$password = "";
 	$servidor = "localhost";
-	$basededatos = "mexicanCodeIsHot";
+	$basededatos = "despensa";
 	
 // creación de la conexión a la base de datos con mysql_connect()
 	$conexion = mysqli_connect( $servidor, $usuario, "" ) or die ("No se ha podido conectar al servidor de Base de datos");
@@ -12,12 +12,10 @@
 	$db = mysqli_select_db( $conexion, $basededatos ) or die ( "Upps! Pues va a ser que no se ha podido conectar a la base de datos" );
 
 // crear tabla sql
-$sql = "CREATE TABLE mexico (
+$sql = "CREATE TABLE donadores (
 id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
 firstname VARCHAR(30) NOT NULL,
 lastname VARCHAR(30) NOT NULL,
-email VARCHAR(50),
-reg_date TIMESTAMP
 )";
 
 if ($conexion->query($sql) === TRUE) {
